@@ -196,11 +196,32 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="HYDRA-教程"><a href="#HYDRA-教程" class="headerlink" title="HYDRA 教程"></a>HYDRA 教程</h1><hr>
-<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项:"></a>注意事项:</h1><ul>
-<li>测试前先确保内存小参稳定,能过tm5测试等,   </li>
-<li><strong>curve shaper max +13 high +3 确保得到最佳负压,这个要开,能修正高频稳定性—(这是针对9950x的,9800x3d因为频率只有5.45g,尝试 max +10 high +2,或者进一步缩小),具体curve shaper 介绍看本文末尾</strong></li>
-</ul>
+          HYDRA 教程
+
+
+
+注意事项:
+ * 测试前先确保内存小参稳定,能过tm5测试等, 
+ * curve shaper max +13 high +3 确保得到最佳负压,这个要开,能修正高频稳定性—(这是针对9950x的,9800x3d因为频率只有5.45g,尝试 max +10 high +2,或者进一步缩小),具体curve shaper 介绍看本文末尾
+
+双击打开软件后要求选择APP PACK位置
+ 
+
+ * 选择下载好的 app pack位置
+
+
+
+
+打开软件成功
+ 
+
+ 1. 我们只用到这两个设置
+
+打开PBO2
+ 
+
+我们先填入大概起始负压,就从什么负压开始测,会覆盖主板的设置
+
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2025/02/10/HYDRA%20%E6%95%99%E7%A8%8B%20(2025-0210%E6%9B%B4%E6%96%B0)/#more" rel="contents">
@@ -272,9 +293,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="2025-0120-回退到1-2-02-bios"><a href="#2025-0120-回退到1-2-02-bios" class="headerlink" title="2025.0120-回退到1.2.02 bios"></a>2025.0120-回退到1.2.02 bios</h1><ul>
-<li>确认benchmate参数,你能跑进84秒的</li>
-</ul>
+          2025.0120-回退到1.2.02 bios
+ * 确认benchmate参数,你能跑进84秒的
+
+
+
+
+ * 0.86版本yc
+   
+
+2025-0121-又更新到1.2.03
+ 
+
+ 1. yc 5b确实变慢了,原因不知道为什么???无论0.86还是0.85 
+ 2. 0.86yc
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2025/02/07/%E5%85%B3%E4%BA%8E9950x-y-cruncher-pi-5b%20%E4%B8%8D%E5%90%8Cbios%E8%B7%91%E5%88%86%E9%97%AE%E9%A2%98/#more" rel="contents">
@@ -332,7 +364,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-02-10 17:05:22" itemprop="dateModified" datetime="2025-02-10T17:05:22+08:00">2025-02-10</time>
+                <time title="Modified: 2025-02-10 17:35:21" itemprop="dateModified" datetime="2025-02-10T17:35:21+08:00">2025-02-10</time>
               </span>
 
           
@@ -346,8 +378,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+
+Quick Start
+Create a new post
+1
+
+
+$ hexo new "My New Post"
+
+
+More info: Writing
+
+Run server
+1
+
+
+$ hexo s
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2025/02/07/hello-world/#more" rel="contents">
@@ -428,20 +475,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="9800x3d调优"><a href="#9800x3d调优" class="headerlink" title="9800x3d调优"></a>9800x3d调优</h1><ul>
-<li>dgreadiness_v3.6关闭 vbs <a href="win1124h2-guan-bi-vbsde-fang-fa-2024-10-7.md">win1124H2 关闭vbs的方法-2024.10.7</a>    <ul>
-<li>win10可能导致powershell不是新版本?需要更新     <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\System32&gt;powershell -ep bypass</span><br><span class="line">Windows PowerShell</span><br><span class="line">Copyright (C) Microsoft Corporation. All rights reserved.</span><br><span class="line"></span><br><span class="line">Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows</span><br><span class="line"></span><br><span class="line">PS C:\Windows\System32&gt; DG_Readiness_Tool_v3.6.ps1 -Disable</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<ul>
-<li><a href="solved-turn-off-vbs-100-solved-device-guard-cr.md">[Solved] Turn off VBS 100% Sol…</a></li>
-</ul>
-</li>
-<li>不行尝试华为脚本—hydra vbs选项 -optimizer</li>
-</ul>
-</li>
-<li>quickcpu 电源策略 修改 smt  pcie  het   </li>
-<li>修改core parking 50%   </li>
-<li>进一步禁用c6? <a href="shi-yong-quick-cpuxiu-gai-idledai-ti-hydra-dis.md">使用quick cpu修改idle代替hydra disab…</a>      <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Processor idle promote threshold</span><br><span class="line"></span><br><span class="line">- 这个修改为97%那么可以实现待机c6,有点负载就不会进入C6   ,不用禁用pss达到99%性能</span><br><span class="line">- 或者100%完全禁用c6</span><br></pre></td></tr></table></figure></li>
-</ul>
+          9800x3d调优
+ * dgreadiness_v3.6关闭 vbs win1124H2 关闭vbs的方法-2024.10.7  * win10可能导致powershell不是新版本?需要更新 1
+      2
+      3
+      4
+      5
+      6
+      7
+      8
+      
+      
+      C:\Windows\System32>powershell -ep bypass
+      Windows PowerShell
+      Copyright (C) Microsoft Corporation. All rights res
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2025/02/07/9800x3d%20%E8%B0%83%E4%BC%98(%E6%9B%B4%E6%96%B0)/#more" rel="contents">
