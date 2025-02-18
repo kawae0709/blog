@@ -171,10 +171,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2025-02-10 10:00:00 / Modified: 17:05:36" itemprop="dateCreated datePublished" datetime="2025-02-10T10:00:00+08:00">2025-02-10</time>
+              <time title="Created: 2025-02-10 10:00:00" itemprop="dateCreated datePublished" datetime="2025-02-10T10:00:00+08:00">2025-02-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2025-02-18 23:33:31" itemprop="dateModified" datetime="2025-02-18T23:33:31+08:00">2025-02-18</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -201,27 +207,11 @@
 
 
 注意事项:
- * 测试前先确保内存小参稳定,能过tm5测试等, 
+ * 测试前先确保内存小参稳定,能过tm5测试等,
  * curve shaper max +13 high +3 确保得到最佳负压,这个要开,能修正高频稳定性—(这是针对9950x的,9800x3d因为频率只有5.45g,尝试 max +10 high +2,或者进一步缩小),具体curve shaper 介绍看本文末尾
-
-双击打开软件后要求选择APP PACK位置
- 
-
- * 选择下载好的 app pack位置
-
-
-
-
-打开软件成功
- 
-
- 1. 我们只用到这两个设置
-
-打开PBO2
- 
-
-我们先填入大概起始负压,就从什么负压开始测,会覆盖主板的设置
-
+ * 不要关闭avx512,程序是跑avx512的,请保持开启
+ * 不要尝试关闭 pss,c-state等,导致hydra无法获取 cppc顺序
+ * 建议流程:bios-load默认-调整内存参数—开启advanced模式里面的PBO
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2025/02/10/HYDRA%20%E6%95%99%E7%A8%8B%20(2025-0210%E6%9B%B4%E6%96%B0)/#more" rel="contents">
